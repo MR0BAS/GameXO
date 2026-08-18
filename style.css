@@ -110,7 +110,7 @@ body{
     border-radius: 30px;
     box-shadow: 0 5px 13px rgb(0, 0, 0, 0.9);
     aspect-ratio: 1;
-    height: 59%;
+    height: 60%;
     }
 
 #header-and-board-wrapper {
@@ -120,15 +120,6 @@ body{
     flex-direction: column;
     width: 40%;
     height: 45%;
-    }
-
-#main-content {
-    height: 100%;
-    width: 94%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     }
 
 #header {
