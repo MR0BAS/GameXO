@@ -1,0 +1,125 @@
+:root {
+    --header-color: #3f3b3b;
+    --boarder-color: #0a67ae;
+    --boarder2-color: #06648d;
+    --main-background-color: #1B1B1B;
+    --button-color: #0c251a;
+    --button2-color: #143929;
+}
+
+body{
+    background-color: var(--main-background-color);
+}
+
+#header {
+    background-color: var(--header-color);
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    width: 60%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#all-content {
+    height: 90vh;
+    margin: 0;
+}
+
+#main-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#grid-container {
+    background-color: var(--boarder-color);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 40px;
+    border: #4d4d4d solid 10px;
+    border-radius: 30px;
+    box-shadow: 0 5px 13px rgb(0, 0, 0, 0.9);
+    aspect-ratio: 1;
+    height: 60%;
+}
+
+#header-and-board-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: 70%;
+}
+
+.square {
+    padding: 15px;
+    border: #1B1B1B solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.square:hover {
+    background-color: var(--boarder2-color);
+}
+
+.square-content {
+    width: 5px;
+    height: 5px;
+    padding: 0;
+    font: bold 5px Arial, sans-serif;
+}
+
+.action-btn {
+    font-size: 30px;
+    padding: 7px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.2);
+    color: white;
+    background-color: var(--button-color);
+    cursor: pointer;
+    margin-top: 7px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.action-btn:hover {
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.8);
+    background-color: var(--button2-color);
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+#grid-container {
+    background-color: var(--boarder-color);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 40px;
+    border: #4d4d4d solid 7px;
+    border-radius: 30px;
+    box-shadow: 0 5px 13px rgb(0, 0, 0, 0.9);
+    aspect-ratio: 1;
+    height: 60%;
+    }
+
+#header-and-board-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: 45%;
+    }
+
+}
