@@ -1,7 +1,7 @@
 :root {
     --header-color: #3f3b3b;
-    --boarder-color: #ae0a0a;
-    --boarder2-color: #8d0d06;
+    --boarder-color: #0a67ae;
+    --boarder2-color: #06648d;
     --main-background-color: #1B1B1B;
     --button-color: #0c251a;
     --button2-color: #143929;
@@ -102,7 +102,7 @@ body{
 
 @media (min-width: 320px) and (max-width: 767px) {
 #grid-container {
-    background-color: red;
+    background-color: var(--boarder-color);
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 40px;
