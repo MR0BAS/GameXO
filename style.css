@@ -102,7 +102,7 @@ body{
 
 @media (min-width: 320px) and (max-width: 767px) {
 #grid-container {
-    background-color: var(--boarder-color);
+    background-color: red;
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 40px;
