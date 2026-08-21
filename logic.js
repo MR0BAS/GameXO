@@ -23,7 +23,6 @@ for (const item of gridItems) {
         squarecontent.innerHTML = currentTurn
 
         boardArray[index] = currentTurn
-        console.log(boardArray)
 
         evaluateboard()
         if (currentTurn === "X") {
